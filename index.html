@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="directivePractice">
+    <head>
+        <!-- REQUIRED BY BOOTSTRAP -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- /REQUIRED BY BOOTSTRAP -->
+        <title>Lesson Hider</title>
+        <!--<link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="main.css" type="text/css">-->
+    </head>
+    <body ng-controller="lessonCtrl">
+
+        <ul>
+        <lesson-hider ng-repeat="lesson in lessons" lesson="lesson" day-alert="announceDay(lesson, day)"></lesson-hider>
+        </ul>
+
+        <!-- //////////////////SCRIPTS\\\\\\\\\\\\\\\\\\\\ -->
+        <!--<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/656dbdb103.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+        <!-- ANGULAR -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+        <script src="app.js"></script>
+        <script src="lessonCtrl.js"></script>
+        <script src="lessonService.js"></script>
+        <script src="lessonHider.js"
+        <!-- /ANGULAR -->
+        // <script src="./js/animate.js"></script>
+    </body>
+</html>
